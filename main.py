@@ -66,5 +66,5 @@ async def send_btc_report():
     except Exception as e:
         print(f"Ошибка: {e}")
 
-if name == "__main__":
+if name __name__== "__main__":
     asyncio.run(send_btc_report())
