@@ -66,4 +66,5 @@ async def send_btc_report():
     except Exception as e:
         print(f"Ошибка: {e}")
 
-if _ _ name_ _=="_ _main_ _":
+if __name__ == '__main__':
+
