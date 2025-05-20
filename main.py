@@ -1,5 +1,3 @@
-
-@@ -0,0 +1,18 @@
 import asyncio
 from telegram import Bot
 
@@ -14,8 +12,9 @@ async def send_loop():
             await bot.send_message(chat_id=CHAT_ID, text="📊 BTC Report: бот работает. Следующее обновление через 4 часа.")
         except Exception as e:
             print(f"Ошибка отправки: {e}")
-        await asyncio.sleep(4 * 60 * 60)  # 4 часа в секундах
+        await asyncio.sleep(4 * 60 * 60)
 
 if __name__ == '__main__':
     asyncio.run(send_loop())
+
 
